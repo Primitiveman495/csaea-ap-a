@@ -26,7 +26,6 @@ public class CrashCourse {
          // Arithmetic Operators 
          // + - / *  %
          // += -= /=  %=
-
         int d = 3;
         d += 7;
 
@@ -47,7 +46,6 @@ public class CrashCourse {
 
         // LOGICAL OPERATORS 
         // In order of presedence: NOT:  !   AND: &&   OR: ||
-
         boolean e = false; boolean f = true;
 
         // predict output: true or false? 
@@ -57,6 +55,46 @@ public class CrashCourse {
         System.out.println(e || f && !e); // true
 
         System.out.println( e && f); // short circuits after checking e -- java does not need to check f.
+
+        // Casting (converting variables)
+        int g = (int)5.5;
+        System.out.println("5.5 rounds to " + g);
+        double h = (double)5/6;
+        System.out.println(h);
+
+        // STRINGS
+        String s1 = "Goodnight";
+        String s2 = " and ";
+        String s3 = "Goodbye.";
+        String result = s1 + s2 + s3;
+        result += "\nDo you like inflation?";
+        System.out.println(result);
+
+        // 1D ARRAYS
+        int[] arry1 = new int[10];
+        System.out.println(arry1);
+        System.out.println("length: " + arry1.length);
+
+        arry1[0] = 11;
+        arry1[1] = 2;
+
+        System.out.println("Remainder: " + arry1[0] % arry1[1]);
+
+        int[] arry2 = {34, 52, 3, 64, 32};
+        System.out.println("arry2: " + arry2);
+
+        // 2D ARRAYS
+        int[][] arryGrid1 = new int[4][3]; // First bracket is how many rows, second is how many columns
+        /*
+        {
+        {0, 0, 0}
+        {0, 0, 0}
+        {0, 0, 0}
+        {0, 0, 0}
+        }
+        */
+        System.out.println("Rows: " + arryGrid1.length);
+        System.out.println("Columns: " + arryGrid1[0].length); // Acesses the first array in the grid ({0, 0, 0}) and describes its length
 
     }
 
