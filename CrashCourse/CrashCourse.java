@@ -33,20 +33,20 @@ public class CrashCourse {
 
         System.out.println("d is equal to " + d);
 
-        // increment and decrement by one:
+        // Increment and decrement by one:
         // --  ++
         d--;
         d++;
         d++;
         System.out.println("d is NOW equal to " + d);
 
-        //COMPARISONS (always returns true or false)
+        //Comparisons (always returns true or false)
         //  <  >   <=   >=   ==   !=
         System.out.println(4 < 5);
         System.out.println(7 == 4);
         System.out.println(1 != 2);
 
-        // LOGICAL OPERATORS 
+        // Logical Operators
         // In order of presedence: NOT:  !   AND: &&   OR: ||
         boolean e = false; boolean f = true;
 
@@ -538,7 +538,44 @@ public class CrashCourse {
         System.out.println("Im big fat and full of gas");
         System.out.println("Im big fat and full of gas");
         
+        // Math Class
+        Math.max(5, 9);
+        Math.min(5, 9);
+        Math.sqrt(9);
+        Math.abs(-5);
 
+        // If Statements
+        if(false){
+            System.out.println("If");
+        } else if(!false){
+            System.out.println("Elif");
+        }else{
+            System.out.println("Else");
+        }
+
+        // Iteration
+        int i = 5;
+
+        while(i < 10){
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+
+        // for(starting number, ending conditional, increment)
+        for(int j = 0; j < 5; j++){
+            System.out.print(j);
+        }
+        System.out.println();
+
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Sheep");
+        animals.add("Deer");
+        animals.add("Moose");
+
+        for(String k : animals){
+            System.out.println(k);
+        }
 
     }
 
