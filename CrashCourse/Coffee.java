@@ -85,4 +85,52 @@ public class Coffee {
 
     }
 
+    public void setFlOz(int newFlOz){
+
+        flOz = newFlOz;
+
+    }
+
+    public void setMilkPercentage(double newPercent){
+
+        milkPercentage = newPercent;
+
+    }
+
+    public void setCoffeeBlend(String newBlend){
+
+        coffeeBlend = newBlend;
+
+    }
+
+    public void setCoffeeRoast(String newRoast){
+
+        coffeeRoast = newRoast;
+
+    }
+
+    public int getFlOz(){
+
+        return flOz;
+
+    }
+
+    public double getMilkPercentage(){
+
+        return milkPercentage;
+
+    }
+
+    public String getCoffeeBlend(){
+
+        return coffeeBlend;
+
+    }
+
+    public String getCoffeeRoast(){
+
+        return coffeeRoast;
+
+    }
+
 }
