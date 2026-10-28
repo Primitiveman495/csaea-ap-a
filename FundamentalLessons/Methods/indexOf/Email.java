@@ -24,9 +24,30 @@ public class Email{
         return address.substring(address.indexOf("@"), -1);
     }
 
-    /*public boolean isSchool(){
-
+    public String getFirstName(){
+        return address.substring(0, address.indexOf("."));
     }
-    */
+
+    public String changeDomain(String newDomain){
+        return this.getUser() + "@" + newDomain;
+    }
+
+    public boolean isSchool(){
+        return address.indexOf("hcvsd.org") != -1;
+    }
+
+    public String getLabel(){
+        if(this.isSchool()){
+            return "School: " + this.getDomain();
+        }
+        else{
+            return "Personal: " + this.getDomain();
+        }
+    }
+
+    public boolean isStaffFormat(){
+        return ((this.toString().indexOf("hcvsd.org") != -1) && (this.toString().indexOf(".")) != -1);
+    }
+    
 
 }
