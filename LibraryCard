@@ -1,0 +1,48 @@
+public class LibraryCard{
+
+    private String status
+    private double owedMoney;
+    private boolean hasBook;
+    private int daysBookRented;
+
+    public LibraryCard(String stat, boolean has){
+
+        this.status = stat;
+        this.hasBook = has;
+        this.owedMoney = 0;
+        this.daysBookRented = 0;
+
+    }
+
+    public String toString(){
+        return status + " | Has a Book Rented: " + hasBook + " | Owes: " + owedMoney + " | Days Book has Been Rented for: " + daysBookRented
+    }
+
+    public int passDay(int days){
+        if((name.indexOf("Member") != -1) && (days + daysBookRented > 21)){
+            owedMoney += days * 5;
+        }
+        else{
+            owedMoney += days * 5
+        }
+        daysBookRented += days;
+    }
+
+    public String updateMembership(String tier){
+        if(!status.substring(status.indexOf(" "), name.length() - 1).equals(tier)){
+            status = tier
+            return status
+        }
+    }
+
+    public boolean returnBook(){
+        if(hasBook){
+            owedMoney = 0;
+            daysBookRented = 0;
+            hasBook = false;
+            return true
+        }
+        return false
+    }
+
+}
