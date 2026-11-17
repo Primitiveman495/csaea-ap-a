@@ -37,12 +37,32 @@ public class NativeArrays {
 
         for(int i = 0; i < nums.length; i++){
             if(i < 0){
-                System.out.println(0);
-            }
-            else{
-                System.out.println(i);
+                nums[i] = 0;
             }
         }
+
+        int[] testScores = {85, 62, 97, 45, 70, 99};
+
+        for(int i = 0; i < testScores.length; i++){
+            if(nums[i] > 95){
+                nums[i] = 100;
+            }
+            else{
+                nums[i] += 5;
+            }
+        }
+
+        int[] temps = {58, 71, 64, 80, 77, 69};
+        int highestTemp = temps[0];
+        int highestTempIndex = 0;
+
+        for(int i = 1; i < testScores.length; i++){
+            highestTemp = Math.max(temps[i], highestTemp);
+            if(highestTemp == nums[i]){
+                highestTempIndex = 0;
+            }
+        }
+        System.out.println(highestTemp + highestTempIndex);
     
     }
 }
